@@ -23,13 +23,13 @@ if __name__ == "__main__":
         import matplotlib.pyplot as plt
         print("matplotlib er tilstede")    
     except ModuleNotFoundError or ImportError:
-        print('pip install matplotlib of networkx dersom du ønsker å visualisere den beste reiseruten')
+        print('pip install matplotlib of networkx dersom du ønsker å visualisere resultatene dine')
         exit()
 
     try:
         import networkx as nx
     except ModuleNotFoundError or ImportError:
-        print('pip install networkx dersom du ønsker å visualisere den beste reiseruten')
+        print('pip install networkx dersom du ønsker å visualisere resultatene dine')
         exit()
     tuples = [(-1, 1.25),  (1, 1.25), (-1.5, -1.5), (-1, -2), (0, -2), (1, -2),  (1.5, -1.5)]
 
@@ -57,7 +57,7 @@ if __name__ == "__main__":
     plt.title("networkx fungerer også! Lykke til i Oppdal!!")
     ax.set_aspect('equal', adjustable='box')
     plt.show()
-    print("networkx fungerer også! Lykketil i Oppdal!!")
+    print("networkx fungerer også! Lykke til i Oppdal!!")
 
 
 
